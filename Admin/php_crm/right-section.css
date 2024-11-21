@@ -1,0 +1,40 @@
+:root{
+    --color-primary: #cc372a;
+        --color-danger:#f32040;
+        --color-success: #22bca0;
+        --color-warning: #f4d476;
+        --color-white: #fffbed;
+        --color-info-dark: #757c86;
+        --color-dark: #363949;
+        --color-light: rgba(200, 192, 132, 0.18);
+        --color-dark-variant: #677483;
+        --color-background: #f3eac8;
+
+
+        --card-border-radius: 2rem;
+        --border-radius-1: 0.4rem;
+        --border-radius-2: 1.2rem;
+
+        --card-padding: 1.8rem;
+        --padding-1: 1.2rem;
+
+        --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeef3;
+    --color-dark-variant: #b1c9d7;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.right-section{
+    margin-top: 1.4rem;
+}
+
+.right-section .nav{
+    display: flex;
+    justify-content: end;
+}

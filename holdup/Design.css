@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #c0392b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.header h1 {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 1.5em;
+}
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; 
+}
+/* hover animations */
+.header nav a:hover {
+    color: #FFC107; 
+}
+
+
+.header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #FFC107;
+    transition: width 0.3s ease;
+}
+
+.header nav a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #FFC107;
+    transition: width 0.3s ease;
+}
+
+
+
+.header nav a:hover::after {
+    width: 100%; 
+}
+ /* active link underline */
+.header nav a.active {
+    color: #FFC107;
+}
+
+.header nav a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%; 
+    height: 2px;
+    background-color: #FFC107; 
+}
+
+
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+.orders {
+    width: 25%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.orders h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.order-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.order-list li {
+    padding: 8px 0;
+    font-size: 1em;
+    color: #ccc;
+}
+.order-list li.active {
+    color: #e74c3c;
+}
+.order-details {
+    width: 75%;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.order-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.order-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.order-section div {
+    width: 45%;
+}
+.order-summary, .order-items {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+}
+.order-summary p, .order-items p {
+    margin: 8px 0;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-update {
+    background-color: #27ae60;
+    color: white;
+}
+.btn-cancel {
+    background-color: #e74c3c;
+    color: white;
+}

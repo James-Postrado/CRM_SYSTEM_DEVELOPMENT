@@ -1,0 +1,180 @@
+:root{
+    --color-primary: #cc372a;
+        --color-danger:#f32040;
+        --color-success: #22bca0;
+        --color-warning: #f4d476;
+        --color-white: #fffbed;
+        --color-info-dark: #757c86;
+        --color-dark: #363949;
+        --color-light: rgba(200, 192, 132, 0.18);
+        --color-dark-variant: #677483;
+        --color-background: #f3eac8;
+
+
+        --card-border-radius: 2rem;
+        --border-radius-1: 0.4rem;
+        --border-radius-2: 1.2rem;
+
+        --card-padding: 1.8rem;
+        --padding-1: 1.2rem;
+
+        --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeef3;
+    --color-dark-variant: #b1c9d7;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+main{
+    margin-top: 1.4rem;
+}
+
+main .analyzed{
+    margin-top: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+main .analyzed > div{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+main .analyzed > div:hover{
+    box-shadow: none;
+}
+
+main .analyzed > div .status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .analyzed .status{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .analyzed h3{
+    margin-left: 0.6rem;
+    font-size: 1rem;
+}
+
+main .analyzed .valued{
+    font-weight: 300;
+    font-size: 2.5rem;
+    justify-self: center;
+}
+
+main .analyzed .valued2{
+    font-weight: 300;
+    font-size: 2.5rem;
+    justify-self: center;
+}
+
+main .analyzed .mark{
+    font-weight: 50;
+    font-size: 3rem;
+}
+
+main .sales-graphs{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+.view-details span{
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+main .new-subs .view-details .deets{
+    display: flex;
+    gap: 1rem;
+}
+
+main .new-subs{
+    margin-top: 1.3rem;
+}
+
+main .new-subs .user-list{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+main .new-subs .user-list:hover{
+    box-shadow: none;
+}
+
+main .new-subs .user-list .user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .new-subs .user-list .user img{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.4rem;
+    border-radius: 50%;
+}
+
+main .trending{
+    margin-top: 1.3rem;
+}
+
+main .trending h2{
+    margin-bottom: 0.8rem;
+}
+
+main .trending table{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+main .trending table:hover{
+    box-shadow: none;
+}
+
+main table tbody td{
+    height: 2.8rem;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main .trending img{
+    width: 2rem;
+    border-radius: 50%;
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}

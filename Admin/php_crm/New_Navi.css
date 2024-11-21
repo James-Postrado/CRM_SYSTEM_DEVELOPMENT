@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primary: #cc372a;
+        --color-danger:#f32040;
+        --color-success: #22bca0;
+        --color-warning: #f4d476;
+        --color-white: #fffbed;
+        --color-info-dark: #757c86;
+        --color-dark: #363949;
+        --color-light: rgba(200, 192, 132, 0.18);
+        --color-dark-variant: #677483;
+        --color-background: #f3eac8;
+        --color-active: #f3eac8;
+
+
+        --card-border-radius: 2rem;
+        --border-radius-1: 0.4rem;
+        --border-radius-2: 1.2rem;
+
+        --card-padding: 1.8rem;
+        --padding-1: 1.2rem;
+
+        --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeef3;
+    --color-dark-variant: #b1c9d7;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Geist', 'sans-serif';
+    font-size: 0.88rem;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logogo{
+    border-radius: 50%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+small{
+    font-size: 0.7rem;
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.text-mutedd{
+    color: var(--color-info-dark);
+}
+
+.primaryd{
+    color: var(--color-primary);
+}
+
+.dangerd{
+    color: var(--color-danger);
+}
+
+.successd{
+    color: var(--color-success);
+}
+
+.warningd{
+    color: var(--color-warning);
+}
+
+.containerd{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto 23rem;
+}
+
+aside{
+    height: 100vh;
+    top: 0px;
+    position: sticky;
+}
+
+aside .toggled{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .toggled .logod{
+    display: flex;
+    gap: 0.5rem;
+}
+
+aside .toggled .logod img{
+    width: 4rem;
+    height: 4rem;
+}
+
+aside .toggled .closed{
+    padding-right: 1rem;
+    display: none;
+}
+
+aside .sidebard{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    height: 84vh;
+    position: relative;
+    top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebard:hover{
+    box-shadow: none;
+}
+
+aside .sidebard a{
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 2.3rem;
+    margin-top: 2.3rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebard a span{
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebard a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 80%;
+}
+
+aside .sidebard a.actived{
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-active);
+    margin-left: 0;
+}
+
+aside .sidebard a.actived::before{
+    content: '';
+    width: 6px;
+    height: 18px;
+    background-color: var(--color-primary);
+}
+
+aside .sidebard a.actived:hover::before{
+    transition: all 0.3s ease;
+    height: 32px;
+}
+
+aside .sidebard a.actived span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+
+aside .sidebard a:hover{
+    color: var(--color-primary);
+}
+
+aside .sidebard a:hover span{
+    margin-left: 0.7rem;
+}
+
+#donutchart{
+    border-radius: 24px;
+}
