@@ -1,3 +1,7 @@
+<?php
+    require("funcs.php");
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,9 +77,9 @@
                 <div class="sales">
                     <div class="status">
                         <div class="symbol">
-                            <span class="material-symbols-outlined mark">
-                                motorcycle
-                            </span>
+                        <span class="material-symbols-outlined mark">
+                            order_approve
+                        </span>
                         </div>
                         <div class="info">
                             <h3>Delivered Orders Today</h3>

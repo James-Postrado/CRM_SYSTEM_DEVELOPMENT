@@ -58,7 +58,7 @@
                         <h3>Customer Service</h3>
                     </a>
 
-                    <a href="#">
+                    <a href="logout.php">
                     <span class="material-symbols-outlined">
                         logout
                     </span>
